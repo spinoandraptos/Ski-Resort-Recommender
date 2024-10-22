@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Ski Resort Recommendation</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Ski Resort Recommendation Dashboard</h1>
+        <form action="/" method="post">
+            <label for="skill_level">Skill Level:</label>
+            <select id="skill_level" name="skill_level">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter location" required>
+            <button type="submit">Get Recommendations</button>
+        </form>
+        {% if resorts %}
+            <h2>Recommended Resorts:</h2>
+            <ul>
+                {% for resort in resorts %}
+                    <li>{{ resort }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</body>
+</html>

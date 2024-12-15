@@ -33,4 +33,5 @@ Tools Used: Jupyter Notebook, Python3, Microsoft Excel, GitHub, Python Libraries
 Scikit-Learn, xgboost, and Kaggle
 
 What each files does:
+Ski_Resort_Data_Exploration.ipynb: This holds all the python code we used to explore data. 
 

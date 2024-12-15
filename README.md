@@ -29,4 +29,8 @@ and the 2010/2011 seasons (in millions)*, 2012.
 [10] Tank, T. Global ski resort rankings dataset, 2024.
 [11] Toujas, A. Data web scraping to help plan a ski vacation, 2017.
 
+Tools Used: Jupyter Notebook, Python3, Microsoft Excel, GitHub, Python Libraries: Pandas, Numpy, Matplotlib, Seaborn, Scipy,
+Scikit-Learn, xgboost, and Kaggle
+
+What each files does:
 
